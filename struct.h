@@ -26,10 +26,16 @@ typedef struct {
 #define DNS_QR_RESPONSE 1    // 响应
 #define DNS_OPCODE_QUERY 0   // 标准查询
 
+#define MAX_DOMAIN_LENGTH 256
+#define MAX_IP_LENGTH 64
 // 函数声明
 void parse_dns_header(const unsigned char* buffer, DNSHeader* header);
 void build_dns_header(unsigned char* buffer, DNSHeader* header);
 int parse_dns_name(const unsigned char* buffer, int offset, char* name);
 int build_dns_name(unsigned char* buffer, int offset, const char* name);
+
+
+int insert_to_mapping(const char* domain, const char* ip); // 声明
+int find_domain_mappings(const char* domain, char ip_list[][MAX_IP_LENGTH], int max_count); // 查询
 
 #endif 

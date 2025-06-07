@@ -1,5 +1,11 @@
 {
     "files.associations": {
         "stdio.h": "c"
-    }
+    },
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontWeight": "normal"
 }

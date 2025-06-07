@@ -16,7 +16,7 @@
 #define BUFFER_SIZE 512
 
 #define MAX_DOMAIN_LENGTH 256
-#define MAX_IP_LENGTH 16
+#define MAX_IP_LENGTH 64
 #define MAX_ENTRIES 10000
 
 // 外部变量声明

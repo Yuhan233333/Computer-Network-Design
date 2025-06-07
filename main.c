@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
     }
     printf("DNS服务器: %s\n", DNS_SERVER);
     printf("映射表文件: %s\n", LOCAR_NAME);
-
+    
     // 加载映射表文件
     if (load_dnsrelay_file(LOCAR_NAME) != 0) {
         printf("映射表文件加载失败\n");
